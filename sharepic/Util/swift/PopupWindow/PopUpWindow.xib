@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Mark Simonson - Proxima Nova Regular.otf">
+            <string>ProximaNova-Regular</string>
+            <string>ProximaNova-Regular</string>
+            <string>ProximaNova-Regular</string>
+        </mutableArray>
+        <mutableArray key="Mark Simonson - Proxima Nova Semibold.otf">
+            <string>ProximaNova-Semibold</string>
+            <string>ProximaNova-Semibold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopUpVC" customModule="FindTalents" customModuleProvider="target">
+            <connections>
+                <outlet property="btnCancel" destination="JKY-DV-C6c" id="8Tp-VA-bBF"/>
+                <outlet property="btnOkWithCancel" destination="a5k-GU-yEX" id="RKB-iV-HGb"/>
+                <outlet property="btnOkay" destination="pWG-Eg-ZyG" id="LgX-ca-mvR"/>
+                <outlet property="lblMessage" destination="hoR-xs-iqZ" id="ggQ-ZX-upX"/>
+                <outlet property="lblTitle" destination="jZD-rY-1oY" id="Aen-yf-Dip"/>
+                <outlet property="view" destination="gYx-fl-UJe" id="MHI-kf-WRV"/>
+                <outlet property="viewContainer" destination="4r5-ik-mPZ" id="icU-aP-Rae"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="gYx-fl-UJe">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4r5-ik-mPZ" userLabel="containerView">
+                    <rect key="frame" x="49" y="231" width="277" height="206"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Talent Info" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jZD-rY-1oY">
+                            <rect key="frame" x="63" y="8" width="150" height="41"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="41" id="YHG-HF-fNQ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="20"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aGE-UN-T7v">
+                            <rect key="frame" x="63" y="44" width="150" height="1"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="GTg-Nd-xaj"/>
+                                <constraint firstAttribute="height" constant="1" id="aEl-0X-TtR"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hoR-xs-iqZ">
+                            <rect key="frame" x="12" y="55" width="254" height="92"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="750" constant="60" id="8AU-Wq-8dS"/>
+                            </constraints>
+                            <string key="text">A talent profile can be used to apply for jobs and showcase your talent set to others around you for potential job leads!But the best of part is that it's FREE!</string>
+                            <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWG-Eg-ZyG">
+                            <rect key="frame" x="55" y="156" width="167" height="35"/>
+                            <color key="backgroundColor" red="0.66666666669999997" green="0.43137254899999999" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="yuX-M9-5fi"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
+                            <state key="normal" title="Okay">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onOkay:" destination="-1" eventType="touchUpInside" id="3ce-4D-m8M"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5k-GU-yEX">
+                            <rect key="frame" x="8" y="156" width="119" height="35"/>
+                            <color key="backgroundColor" red="0.52156862749999999" green="0.30588235289999999" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="GnG-AF-K3o"/>
+                                <constraint firstAttribute="width" constant="119" id="jHQ-De-Ami"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
+                            <state key="normal" title="Okay">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onOkWithCancel:" destination="-1" eventType="touchUpInside" id="n8N-ur-tL0"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JKY-DV-C6c">
+                            <rect key="frame" x="150" y="156" width="119" height="35"/>
+                            <color key="backgroundColor" red="0.66666666669999997" green="0.43137254899999999" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="wRQ-jw-PeK"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onCancel:" destination="-1" eventType="touchUpInside" id="ejq-jf-VCE"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="hoR-xs-iqZ" firstAttribute="height" relation="lessThanOrEqual" secondItem="4r5-ik-mPZ" secondAttribute="height" id="6mW-7S-zvs"/>
+                        <constraint firstItem="aGE-UN-T7v" firstAttribute="top" secondItem="jZD-rY-1oY" secondAttribute="bottom" constant="-5" id="8eE-mF-7TY"/>
+                        <constraint firstAttribute="trailing" secondItem="JKY-DV-C6c" secondAttribute="trailing" constant="8" id="8mx-zm-EpB"/>
+                        <constraint firstItem="a5k-GU-yEX" firstAttribute="width" secondItem="JKY-DV-C6c" secondAttribute="width" id="Bqf-dY-UXE"/>
+                        <constraint firstItem="a5k-GU-yEX" firstAttribute="height" secondItem="JKY-DV-C6c" secondAttribute="height" id="CDO-Vm-O9y"/>
+                        <constraint firstItem="a5k-GU-yEX" firstAttribute="top" secondItem="hoR-xs-iqZ" secondAttribute="bottom" constant="9" id="EEf-6s-BrK"/>
+                        <constraint firstItem="hoR-xs-iqZ" firstAttribute="top" secondItem="aGE-UN-T7v" secondAttribute="bottom" constant="10" id="Fxf-IS-PyK"/>
+                        <constraint firstItem="aGE-UN-T7v" firstAttribute="width" secondItem="jZD-rY-1oY" secondAttribute="width" priority="750" id="GLi-52-0oV"/>
+                        <constraint firstItem="hoR-xs-iqZ" firstAttribute="width" relation="lessThanOrEqual" secondItem="4r5-ik-mPZ" secondAttribute="width" constant="-20" id="HSy-dh-5ba"/>
+                        <constraint firstAttribute="bottom" secondItem="a5k-GU-yEX" secondAttribute="bottom" constant="15" id="JQx-jB-wtl"/>
+                        <constraint firstItem="pWG-Eg-ZyG" firstAttribute="centerX" secondItem="4r5-ik-mPZ" secondAttribute="centerX" id="M3B-IK-5al"/>
+                        <constraint firstItem="aGE-UN-T7v" firstAttribute="centerX" secondItem="4r5-ik-mPZ" secondAttribute="centerX" id="NCc-uw-Ryg"/>
+                        <constraint firstAttribute="width" constant="277" id="SVg-B5-hRv"/>
+                        <constraint firstItem="JKY-DV-C6c" firstAttribute="bottom" secondItem="a5k-GU-yEX" secondAttribute="bottom" id="Ufp-b6-7um"/>
+                        <constraint firstItem="hoR-xs-iqZ" firstAttribute="centerX" secondItem="4r5-ik-mPZ" secondAttribute="centerX" id="ajU-fw-aVz"/>
+                        <constraint firstItem="jZD-rY-1oY" firstAttribute="width" relation="lessThanOrEqual" secondItem="4r5-ik-mPZ" secondAttribute="width" id="cA7-X0-Dz4"/>
+                        <constraint firstItem="jZD-rY-1oY" firstAttribute="top" secondItem="4r5-ik-mPZ" secondAttribute="top" constant="8" id="cYR-dx-zyn"/>
+                        <constraint firstAttribute="bottom" secondItem="pWG-Eg-ZyG" secondAttribute="bottom" constant="15" id="cwB-GG-FeH"/>
+                        <constraint firstItem="pWG-Eg-ZyG" firstAttribute="width" secondItem="4r5-ik-mPZ" secondAttribute="width" multiplier="0.6" id="e5i-sm-XXi"/>
+                        <constraint firstItem="pWG-Eg-ZyG" firstAttribute="top" secondItem="hoR-xs-iqZ" secondAttribute="bottom" constant="9" id="fRU-GU-DuW"/>
+                        <constraint firstItem="a5k-GU-yEX" firstAttribute="leading" secondItem="4r5-ik-mPZ" secondAttribute="leading" constant="8" id="h1f-FR-ZE7"/>
+                        <constraint firstItem="jZD-rY-1oY" firstAttribute="centerX" secondItem="4r5-ik-mPZ" secondAttribute="centerX" id="hXZ-w9-Re2"/>
+                        <constraint firstItem="JKY-DV-C6c" firstAttribute="top" secondItem="hoR-xs-iqZ" secondAttribute="bottom" constant="9" id="tNf-pd-B6Q"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="4r5-ik-mPZ" firstAttribute="centerY" secondItem="gYx-fl-UJe" secondAttribute="centerY" id="8Pb-JV-sKI"/>
+                <constraint firstItem="4r5-ik-mPZ" firstAttribute="centerX" secondItem="gYx-fl-UJe" secondAttribute="centerX" id="pQi-hp-Mfo"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="596.5" y="245.5"/>
+        </view>
+    </objects>
+</document>

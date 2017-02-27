@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>PalPic Free</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0.3</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.901417566407-ti7pm5olfkngoju0r2pc4pjjqpse5jgu</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb1838829683012532</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>2</string>
+	<key>FacebookAppID</key>
+	<string>1838829683012532</string>
+	<key>FacebookDisplayName</key>
+	<string>PalPic</string>
+	<key>FirebaseAppDelegateProxyEnabled</key>
+	<false/>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>instagram</string>
+		<string>fbapi</string>
+		<string>fb-messenger-api</string>
+		<string>fbauth2</string>
+		<string>fbshareextension</string>
+	</array>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>need to use media libray</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>need to use your Bluetooth</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>need to access your calendars</string>
+	<key>NSCameraUsageDescription</key>
+	<string>need to use your camera</string>
+	<key>NSContactsUsageDescription</key>
+	<string>need to access your contacts</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>need to access the microphone</string>
+	<key>NSMotionUsageDescription</key>
+	<string>need to access your motion usage</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>need to pick your photos</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Bandal.ttf</string>
+		<string>Bangwool.ttf</string>
+		<string>drfont_daraehand_Basic.ttf</string>
+		<string>Eunjin.ttf</string>
+		<string>EunjinNakseo.ttf</string>
+		<string>Guseul.ttf</string>
+		<string>TH Baijam Bold.ttf</string>
+		<string>TH Chakra Petch Bold.ttf</string>
+		<string>TH Charm of AU.ttf</string>
+		<string>TH Charmonman Bold.ttf</string>
+		<string>TH Fahkwang Bold.ttf</string>
+		<string>TH K2D July8 Bold.ttf</string>
+		<string>TH Kodchasal Bold.ttf</string>
+		<string>TH Krub Bold.ttf</string>
+		<string>TH Mali Grade6 Bold.ttf</string>
+		<string>TH Niramit AS Bold.ttf</string>
+		<string>THSarabun Bold.ttf</string>
+		<string>Apple Chancery.ttf</string>
+		<string>Brush Script.ttf</string>
+		<string>Herculanum.ttf</string>
+		<string>Krungthep.ttf</string>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UIRequiresFullScreen</key>
+	<true/>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+</dict>
+</plist>
